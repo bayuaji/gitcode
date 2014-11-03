@@ -1,0 +1,165 @@
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="GitCodeEDM" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="GitCodeEDMContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Users" EntityType="GitCodeEDM.User" />
+    <EntitySet Name="Teams" EntityType="GitCodeEDM.Team" />
+    <EntitySet Name="DetailTeams" EntityType="GitCodeEDM.DetailTeam" />
+    <AssociationSet Name="UserDetailTeam" Association="GitCodeEDM.UserDetailTeam">
+      <End Role="User" EntitySet="Users" />
+      <End Role="DetailTeam" EntitySet="DetailTeams" />
+    </AssociationSet>
+    <AssociationSet Name="TeamDetailTeam" Association="GitCodeEDM.TeamDetailTeam">
+      <End Role="Team" EntitySet="Teams" />
+      <End Role="DetailTeam" EntitySet="DetailTeams" />
+    </AssociationSet>
+    <EntitySet Name="Classes" EntityType="GitCodeEDM.Class" />
+    <EntitySet Name="DetailClasses" EntityType="GitCodeEDM.DetailClass" />
+    <AssociationSet Name="TeamDetailClass" Association="GitCodeEDM.TeamDetailClass">
+      <End Role="Team" EntitySet="Teams" />
+      <End Role="DetailClass" EntitySet="DetailClasses" />
+    </AssociationSet>
+    <AssociationSet Name="ClassDetailClass" Association="GitCodeEDM.ClassDetailClass">
+      <End Role="Class" EntitySet="Classes" />
+      <End Role="DetailClass" EntitySet="DetailClasses" />
+    </AssociationSet>
+    <EntitySet Name="DetailClassAccesses" EntityType="GitCodeEDM.DetailClassAccess" />
+    <AssociationSet Name="UserDetailClassAccess" Association="GitCodeEDM.UserDetailClassAccess">
+      <End Role="User" EntitySet="Users" />
+      <End Role="DetailClassAccess" EntitySet="DetailClassAccesses" />
+    </AssociationSet>
+    <AssociationSet Name="ClassDetailClassAccess" Association="GitCodeEDM.ClassDetailClassAccess">
+      <End Role="Class" EntitySet="Classes" />
+      <End Role="DetailClassAccess" EntitySet="DetailClassAccesses" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" Nullable="false" />
+    <Property Name="Email" Type="String" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" />
+    <NavigationProperty Name="DetailTeams" Relationship="GitCodeEDM.UserDetailTeam" FromRole="User" ToRole="DetailTeam" />
+    <NavigationProperty Name="DetailClassAccesses" Relationship="GitCodeEDM.UserDetailClassAccess" FromRole="User" ToRole="DetailClassAccess" />
+  </EntityType>
+  <EntityType Name="Team">
+    <Key>
+      <PropertyRef Name="TeamId" />
+    </Key>
+    <Property Name="TeamId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <NavigationProperty Name="DetailTeams" Relationship="GitCodeEDM.TeamDetailTeam" FromRole="Team" ToRole="DetailTeam" />
+    <NavigationProperty Name="DetailClasses" Relationship="GitCodeEDM.TeamDetailClass" FromRole="Team" ToRole="DetailClass" />
+  </EntityType>
+  <EntityType Name="DetailTeam">
+    <Key>
+      <PropertyRef Name="DetailTeamId" />
+    </Key>
+    <Property Name="DetailTeamId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="User" Relationship="GitCodeEDM.UserDetailTeam" FromRole="DetailTeam" ToRole="User" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Team" Relationship="GitCodeEDM.TeamDetailTeam" FromRole="DetailTeam" ToRole="Team" />
+    <Property Name="TeamId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="UserDetailTeam">
+    <End Type="GitCodeEDM.User" Role="User" Multiplicity="1" />
+    <End Type="GitCodeEDM.DetailTeam" Role="DetailTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="DetailTeam">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TeamDetailTeam">
+    <End Type="GitCodeEDM.Team" Role="Team" Multiplicity="1" />
+    <End Type="GitCodeEDM.DetailTeam" Role="DetailTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="TeamId" />
+      </Principal>
+      <Dependent Role="DetailTeam">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Class">
+    <Key>
+      <PropertyRef Name="ClassId" />
+    </Key>
+    <Property Name="ClassId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <NavigationProperty Name="DetailClasses" Relationship="GitCodeEDM.ClassDetailClass" FromRole="Class" ToRole="DetailClass" />
+    <NavigationProperty Name="DetailClassAccesses" Relationship="GitCodeEDM.ClassDetailClassAccess" FromRole="Class" ToRole="DetailClassAccess" />
+  </EntityType>
+  <EntityType Name="DetailClass">
+    <Key>
+      <PropertyRef Name="DetailClassId" />
+    </Key>
+    <Property Name="DetailClassId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Team" Relationship="GitCodeEDM.TeamDetailClass" FromRole="DetailClass" ToRole="Team" />
+    <Property Name="TeamId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Class" Relationship="GitCodeEDM.ClassDetailClass" FromRole="DetailClass" ToRole="Class" />
+    <Property Name="ClassId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="TeamDetailClass">
+    <End Type="GitCodeEDM.Team" Role="Team" Multiplicity="1" />
+    <End Type="GitCodeEDM.DetailClass" Role="DetailClass" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="TeamId" />
+      </Principal>
+      <Dependent Role="DetailClass">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ClassDetailClass">
+    <End Type="GitCodeEDM.Class" Role="Class" Multiplicity="1" />
+    <End Type="GitCodeEDM.DetailClass" Role="DetailClass" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Class">
+        <PropertyRef Name="ClassId" />
+      </Principal>
+      <Dependent Role="DetailClass">
+        <PropertyRef Name="ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="DetailClassAccess">
+    <Key>
+      <PropertyRef Name="DetailClassAccessId" />
+    </Key>
+    <Property Name="DetailClassAccessId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="User" Relationship="GitCodeEDM.UserDetailClassAccess" FromRole="DetailClassAccess" ToRole="User" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Class" Relationship="GitCodeEDM.ClassDetailClassAccess" FromRole="DetailClassAccess" ToRole="Class" />
+    <Property Name="ClassId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="UserDetailClassAccess">
+    <End Type="GitCodeEDM.User" Role="User" Multiplicity="1" />
+    <End Type="GitCodeEDM.DetailClassAccess" Role="DetailClassAccess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="DetailClassAccess">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ClassDetailClassAccess">
+    <End Type="GitCodeEDM.Class" Role="Class" Multiplicity="1" />
+    <End Type="GitCodeEDM.DetailClassAccess" Role="DetailClassAccess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Class">
+        <PropertyRef Name="ClassId" />
+      </Principal>
+      <Dependent Role="DetailClassAccess">
+        <PropertyRef Name="ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

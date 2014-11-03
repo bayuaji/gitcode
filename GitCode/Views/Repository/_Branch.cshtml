@@ -1,0 +1,33 @@
+﻿<div class="dropdown">
+    <a class="btn dropdown-toggle" data-toggle="dropdown"><i></i><span class="branch-name">@ViewData["CurrentBranch"]</span> <span class="caret"></span></a>
+    <div class="dropdown-menu">
+        <form>
+            <ul class="nav nav-tabs">
+                <li ><a href="#branch-pane" data-toggle="tab">branch</a></li>
+                <li ><a href="#tag-pane" data-toggle="tab">tag</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active branch-selector" id="branch-pane">
+                    <ul class="nav nav-list">
+                        @if (ViewData.ContainsKey("Branch")) {
+                            foreach (var branchName in ViewData["Branch"] as IEnumerable<string>)
+                            {
+                                <li>@Html.ActionLink(branchName, "Tree", new { path = ViewData["Path"] + "/" + branchName })</li>
+                            }
+                        }
+                    </ul>
+                </div>
+                <div class="tab-pane branch-name branch-selector" id="tag-pane">
+                    <ul class="nav nav-list">
+                        @if (ViewData.ContainsKey("Tag")) { 
+                            foreach (var tagName in ViewData["Tag"] as IEnumerable<string>)
+                            {
+                                    <li>@Html.ActionLink(tagName, "Tree", new { path = ViewData["Path"] + "/" + tagName })</li>
+                            }
+                        }
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+﻿@model GitCode.Models.DetailClass
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>DetailClass</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TeamId, "Team")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("TeamId", String.Empty)
+            @Html.ValidationMessageFor(model => model.TeamId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ClassId, "Class")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("ClassId", String.Empty)
+            @Html.ValidationMessageFor(model => model.ClassId)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

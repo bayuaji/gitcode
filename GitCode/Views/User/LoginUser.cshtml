@@ -1,0 +1,33 @@
+﻿@model GitCode.Models.User
+
+@{
+    ViewBag.Title = "Login";
+}
+
+@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+<section id="loginForm">
+    <h2>Login</h2>
+    <fieldset>
+        <legend>Login Form</legend>
+        <ol>
+            <li>
+                @Html.LabelFor(m => m.Username)
+                @Html.TextBoxFor(m => m.Username)
+                @Html.ValidationMessageFor(m => m.Username)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </li>
+        </ol>
+        <input type="submit" value="Log In" />
+    </fieldset>
+</section>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

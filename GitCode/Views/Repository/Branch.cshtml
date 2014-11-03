@@ -1,0 +1,32 @@
+﻿@model List<GitCode.Models.BranchModel>
+@{
+    ViewBag.SideBar = "True";
+    ViewBag.Title = "Branch";
+}
+
+@if (Model != null) { 
+    <div style="width:100%;text-align:center">
+        <h2>Branch</h2>
+    </div>
+<table class="table table-bordered table-striped">
+    @foreach (var branch in Model)
+    {
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            @branch.BranchName
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Last Updated @branch.CommitInBranch.Author.When.DateTime by @branch.CommitInBranch.Author.Name
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    }
+</table>
+}

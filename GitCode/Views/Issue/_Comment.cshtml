@@ -1,0 +1,40 @@
+﻿@model GitCode.Models.Comment
+
+@{
+    ViewBag.Title = "_Comment";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm("_Comment", "Issue", new { path = GitCode.Models.PagePropertiesModel.projectName + "/" + ViewData["IssueID"] }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    
+    <fieldset>
+        <legend>Comment</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Content)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.Content)
+            @Html.ValidationMessageFor(model => model.Content)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

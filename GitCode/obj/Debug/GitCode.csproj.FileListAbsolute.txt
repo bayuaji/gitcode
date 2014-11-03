@@ -1,0 +1,680 @@
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\GitCode.dll.config
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\GitCode.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\GitCode.pdb
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\Antlr3.Runtime.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\DotNetOpenAuth.AspNet.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\DotNetOpenAuth.Core.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.Consumer.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\EntityFramework.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\Microsoft.Data.Edm.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\Microsoft.Data.OData.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\Microsoft.Web.Infrastructure.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\Microsoft.Web.WebPages.OAuth.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\Newtonsoft.Json.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Net.Http.Formatting.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Spatial.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.Helpers.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.Http.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.Http.OData.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.Http.WebHost.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.Mvc.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.Optimization.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.Razor.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.WebPages.Deployment.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.WebPages.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.WebPages.Razor.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\WebGrease.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\WebMatrix.Data.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\WebMatrix.WebData.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\EntityFramework.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\Newtonsoft.Json.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Net.Http.Formatting.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.Helpers.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.Http.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.Http.WebHost.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.Mvc.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.Razor.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.WebPages.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.WebPages.Deployment.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.WebPages.Razor.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\WebMatrix.Data.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\Microsoft.Web.WebPages.OAuth.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\WebMatrix.WebData.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\DotNetOpenAuth.AspNet.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\DotNetOpenAuth.Core.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.Consumer.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Web.Http.OData.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\Microsoft.Data.Edm.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\Microsoft.Data.OData.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\System.Spatial.xml
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\de\Microsoft.Data.Edm.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\es\Microsoft.Data.Edm.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\fr\Microsoft.Data.Edm.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\it\Microsoft.Data.Edm.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\ja\Microsoft.Data.Edm.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\ko\Microsoft.Data.Edm.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\ru\Microsoft.Data.Edm.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\de\Microsoft.Data.OData.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\es\Microsoft.Data.OData.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\fr\Microsoft.Data.OData.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\it\Microsoft.Data.OData.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\ja\Microsoft.Data.OData.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\ko\Microsoft.Data.OData.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\ru\Microsoft.Data.OData.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\de\System.Spatial.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\es\System.Spatial.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\fr\System.Spatial.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\it\System.Spatial.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\ja\System.Spatial.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\ko\System.Spatial.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\ru\System.Spatial.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\zh-Hans\System.Spatial.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\bin\zh-Hant\System.Spatial.resources.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\obj\Debug\GitCode.csprojResolveAssemblyReference.cache
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\obj\Debug\GitCode.dll
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\obj\Debug\GitCode.pdb
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\obj\Debug\GitCode.Migrations.InitialCreate.resources
+c:\users\bayu.013\documents\visual studio 2013\Projects\GitCode\GitCode\obj\Debug\GitCode.csproj.GenerateResource.Cache
+G:\TA\Source\1.1\GitCode\GitCode\bin\GitCode.dll.config
+G:\TA\Source\1.1\GitCode\GitCode\bin\GitCode.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\GitCode.pdb
+G:\TA\Source\1.1\GitCode\GitCode\bin\Antlr3.Runtime.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\DotNetOpenAuth.AspNet.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\DotNetOpenAuth.Core.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.Consumer.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\EntityFramework.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\Microsoft.Data.Edm.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\Microsoft.Data.OData.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\Microsoft.Web.Infrastructure.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\Microsoft.Web.WebPages.OAuth.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\Newtonsoft.Json.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Net.Http.Formatting.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Spatial.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.Helpers.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.Http.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.Http.OData.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.Http.WebHost.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.Mvc.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.Optimization.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.Razor.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.WebPages.Deployment.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.WebPages.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.WebPages.Razor.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\WebGrease.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\WebMatrix.Data.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\WebMatrix.WebData.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\EntityFramework.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\Newtonsoft.Json.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Net.Http.Formatting.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.Helpers.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.Http.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.Http.WebHost.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.Mvc.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.Razor.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.WebPages.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.WebPages.Deployment.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.WebPages.Razor.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\WebMatrix.Data.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\Microsoft.Web.WebPages.OAuth.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\WebMatrix.WebData.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\DotNetOpenAuth.AspNet.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\DotNetOpenAuth.Core.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.Consumer.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Web.Http.OData.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\Microsoft.Data.Edm.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\Microsoft.Data.OData.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\System.Spatial.xml
+G:\TA\Source\1.1\GitCode\GitCode\bin\de\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\es\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\fr\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\it\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\ja\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\ko\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\ru\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\de\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\es\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\fr\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\it\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\ja\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\ko\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\ru\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\de\System.Spatial.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\es\System.Spatial.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\fr\System.Spatial.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\it\System.Spatial.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\ja\System.Spatial.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\ko\System.Spatial.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\ru\System.Spatial.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\zh-Hans\System.Spatial.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\bin\zh-Hant\System.Spatial.resources.dll
+G:\TA\Source\1.1\GitCode\GitCode\obj\Debug\GitCode.csprojResolveAssemblyReference.cache
+G:\TA\Source\1.1\GitCode\GitCode\obj\Debug\GitCode.Migrations.InitialCreate.resources
+G:\TA\Source\1.1\GitCode\GitCode\obj\Debug\GitCode.csproj.GenerateResource.Cache
+G:\TA\Source\1.1\GitCode\GitCode\obj\Debug\GitCode.dll
+G:\TA\Source\1.1\GitCode\GitCode\obj\Debug\GitCode.pdb
+G:\TA\Source\1.1\GitCode\GitCode\obj\Debug\GitCode.Migrations.newEntity.resources
+G:\TA\Source\1.1\GitCode\GitCode\obj\Debug\GitCode.Migrations.newEntitydetailclassaccess.resources
+G:\TA\Source\1.1\GitCode\GitCode\obj\Debug\GitCode.Migrations.newAtributeindetailclassaccess.resources
+G:\TA\Source\1.1\GitCode\GitCode\obj\Debug\GitCode.Migrations.removePKAddFK.resources
+G:\TA\Source\1.2\GitCode\GitCode\bin\GitCode.dll.config
+G:\TA\Source\1.2\GitCode\GitCode\bin\GitCode.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\GitCode.pdb
+G:\TA\Source\1.2\GitCode\GitCode\bin\Antlr3.Runtime.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\DotNetOpenAuth.AspNet.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\DotNetOpenAuth.Core.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.Consumer.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\EntityFramework.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\Microsoft.Data.Edm.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\Microsoft.Data.OData.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\Microsoft.Web.Infrastructure.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\Microsoft.Web.WebPages.OAuth.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\Newtonsoft.Json.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Net.Http.Formatting.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Spatial.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.Helpers.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.Http.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.Http.OData.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.Http.WebHost.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.Mvc.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.Optimization.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.Razor.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.WebPages.Deployment.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.WebPages.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.WebPages.Razor.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\WebGrease.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\WebMatrix.Data.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\WebMatrix.WebData.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\EntityFramework.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\Newtonsoft.Json.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Net.Http.Formatting.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.Helpers.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.Http.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.Http.WebHost.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.Mvc.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.Razor.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.WebPages.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.WebPages.Deployment.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.WebPages.Razor.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\WebMatrix.Data.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\Microsoft.Web.WebPages.OAuth.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\WebMatrix.WebData.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\DotNetOpenAuth.AspNet.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\DotNetOpenAuth.Core.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.Consumer.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Web.Http.OData.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\Microsoft.Data.Edm.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\Microsoft.Data.OData.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\System.Spatial.xml
+G:\TA\Source\1.2\GitCode\GitCode\bin\de\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\es\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\fr\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\it\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\ja\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\ko\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\ru\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\de\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\es\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\fr\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\it\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\ja\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\ko\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\ru\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\de\System.Spatial.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\es\System.Spatial.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\fr\System.Spatial.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\it\System.Spatial.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\ja\System.Spatial.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\ko\System.Spatial.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\ru\System.Spatial.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\zh-Hans\System.Spatial.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\zh-Hant\System.Spatial.resources.dll
+G:\TA\Source\1.2\GitCode\GitCode\obj\Debug\GitCode.csprojResolveAssemblyReference.cache
+G:\TA\Source\1.2\GitCode\GitCode\obj\Debug\GitCode.Migrations.InitialCreate.resources
+G:\TA\Source\1.2\GitCode\GitCode\obj\Debug\GitCode.Migrations.newEntity.resources
+G:\TA\Source\1.2\GitCode\GitCode\obj\Debug\GitCode.Migrations.newEntitydetailclassaccess.resources
+G:\TA\Source\1.2\GitCode\GitCode\obj\Debug\GitCode.Migrations.newAtributeindetailclassaccess.resources
+G:\TA\Source\1.2\GitCode\GitCode\obj\Debug\GitCode.Migrations.removePKAddFK.resources
+G:\TA\Source\1.2\GitCode\GitCode\obj\Debug\GitCode.csproj.GenerateResource.Cache
+G:\TA\Source\1.2\GitCode\GitCode\obj\Debug\GitCode.dll
+G:\TA\Source\1.2\GitCode\GitCode\obj\Debug\GitCode.pdb
+G:\TA\Source\1.2\GitCode\GitCode\obj\Debug\GitCode.Migrations.adduniqueAttribute.resources
+G:\TA\Source\1.2\GitCode\GitCode\bin\EntityFramework.SqlServer.dll
+G:\TA\Source\1.2\GitCode\GitCode\bin\EntityFramework.SqlServer.xml
+G:\TA\Source\1.3\GitCode\GitCode\obj\Debug\GitCode.Migrations.InitialCreate.resources
+G:\TA\Source\1.3\GitCode\GitCode\obj\Debug\GitCode.Migrations.newEntity.resources
+G:\TA\Source\1.3\GitCode\GitCode\obj\Debug\GitCode.Migrations.newEntitydetailclassaccess.resources
+G:\TA\Source\1.3\GitCode\GitCode\obj\Debug\GitCode.Migrations.newAtributeindetailclassaccess.resources
+G:\TA\Source\1.3\GitCode\GitCode\obj\Debug\GitCode.Migrations.removePKAddFK.resources
+G:\TA\Source\1.3\GitCode\GitCode\obj\Debug\GitCode.Migrations.addNewTableRepo.resources
+G:\TA\Source\1.3\GitCode\GitCode\obj\Debug\GitCode.Migrations.newChangeDB.resources
+G:\TA\Source\1.3\GitCode\GitCode\obj\Debug\GitCode.Migrations.repositoryChanging.resources
+G:\TA\Source\1.3\GitCode\GitCode\obj\Debug\GitCode.csproj.GenerateResource.Cache
+G:\TA\Source\1.3\GitCode\GitCode\bin\GitCode.dll.config
+G:\TA\Source\1.3\GitCode\GitCode\bin\GitCode.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\GitCode.pdb
+G:\TA\Source\1.3\GitCode\GitCode\bin\Antlr3.Runtime.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\DotNetOpenAuth.AspNet.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\DotNetOpenAuth.Core.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.Consumer.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\EntityFramework.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\EntityFramework.SqlServer.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\LibGit2Sharp.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\Microsoft.Data.Edm.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\Microsoft.Data.OData.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\Microsoft.Web.Infrastructure.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\Microsoft.Web.WebPages.OAuth.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\Newtonsoft.Json.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Net.Http.Formatting.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Spatial.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.Helpers.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.Http.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.Http.OData.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.Http.WebHost.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.Mvc.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.Optimization.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.Razor.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.WebPages.Deployment.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.WebPages.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.WebPages.Razor.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\WebGrease.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\WebMatrix.Data.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\WebMatrix.WebData.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\EntityFramework.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\EntityFramework.SqlServer.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\LibGit2Sharp.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\Newtonsoft.Json.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Net.Http.Formatting.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.Helpers.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.Http.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.Http.WebHost.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.Mvc.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.Razor.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.WebPages.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.WebPages.Deployment.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.WebPages.Razor.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\WebMatrix.Data.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\Microsoft.Web.WebPages.OAuth.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\WebMatrix.WebData.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\DotNetOpenAuth.AspNet.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\DotNetOpenAuth.Core.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.Consumer.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Web.Http.OData.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\Microsoft.Data.Edm.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\Microsoft.Data.OData.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\System.Spatial.xml
+G:\TA\Source\1.3\GitCode\GitCode\bin\de\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\es\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\fr\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\it\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\ja\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\ko\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\ru\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\de\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\es\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\fr\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\it\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\ja\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\ko\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\ru\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\de\System.Spatial.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\es\System.Spatial.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\fr\System.Spatial.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\it\System.Spatial.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\ja\System.Spatial.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\ko\System.Spatial.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\ru\System.Spatial.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\zh-Hans\System.Spatial.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\bin\zh-Hant\System.Spatial.resources.dll
+G:\TA\Source\1.3\GitCode\GitCode\obj\Debug\GitCode.dll
+G:\TA\Source\1.3\GitCode\GitCode\obj\Debug\GitCode.pdb
+G:\TA\Source\1.3\GitCode\GitCode\obj\Debug\GitCode.csprojResolveAssemblyReference.cache
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\GitCode.dll.config
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\GitCode.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\GitCode.pdb
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\Antlr3.Runtime.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\DotNetOpenAuth.Core.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\EntityFramework.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\EntityFramework.SqlServer.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\LibGit2Sharp.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\Microsoft.Data.Edm.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\Microsoft.Data.OData.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\Newtonsoft.Json.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Net.Http.Formatting.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Spatial.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.Helpers.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.Http.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.Http.OData.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.Http.WebHost.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.Mvc.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.Optimization.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.Razor.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.WebPages.Deployment.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.WebPages.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.WebPages.Razor.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\WebGrease.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\WebMatrix.Data.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\WebMatrix.WebData.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\EntityFramework.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\EntityFramework.SqlServer.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\LibGit2Sharp.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\Newtonsoft.Json.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Net.Http.Formatting.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.Helpers.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.Http.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.Http.WebHost.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.Mvc.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.Razor.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.WebPages.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.WebPages.Deployment.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.WebPages.Razor.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\WebMatrix.Data.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\WebMatrix.WebData.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\DotNetOpenAuth.Core.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Web.Http.OData.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\Microsoft.Data.Edm.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\Microsoft.Data.OData.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\System.Spatial.xml
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\de\System.Spatial.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\es\System.Spatial.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\fr\System.Spatial.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\it\System.Spatial.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\ja\System.Spatial.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\ko\System.Spatial.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\ru\System.Spatial.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\obj\Debug\GitCode.csprojResolveAssemblyReference.cache
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\obj\Debug\GitCode.Migrations.InitialCreate.resources
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\obj\Debug\GitCode.Migrations.newEntity.resources
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\obj\Debug\GitCode.Migrations.newEntitydetailclassaccess.resources
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\obj\Debug\GitCode.Migrations.newAtributeindetailclassaccess.resources
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\obj\Debug\GitCode.Migrations.removePKAddFK.resources
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\obj\Debug\GitCode.Migrations.addNewTableRepo.resources
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\obj\Debug\GitCode.Migrations.newChangeDB.resources
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\obj\Debug\GitCode.Migrations.repositoryChanging.resources
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\obj\Debug\GitCode.csproj.GenerateResource.Cache
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\obj\Debug\GitCode.dll
+C:\Users\admin\Dropbox\1.9\GitCode\GitCode\obj\Debug\GitCode.pdb
+G:\TA\Source\1.4\GitCode\GitCode\bin\GitCode.dll.config
+G:\TA\Source\1.4\GitCode\GitCode\bin\GitCode.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\GitCode.pdb
+G:\TA\Source\1.4\GitCode\GitCode\bin\Antlr3.Runtime.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\DotNetOpenAuth.AspNet.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\DotNetOpenAuth.Core.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.Consumer.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\EntityFramework.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\EntityFramework.SqlServer.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\LibGit2Sharp.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\Microsoft.Data.Edm.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\Microsoft.Data.OData.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\Microsoft.Web.Infrastructure.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\Microsoft.Web.WebPages.OAuth.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\Newtonsoft.Json.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Net.Http.Formatting.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Spatial.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.Helpers.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.Http.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.Http.OData.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.Http.WebHost.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.Mvc.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.Optimization.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.Razor.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.WebPages.Deployment.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.WebPages.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.WebPages.Razor.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\WebGrease.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\WebMatrix.Data.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\WebMatrix.WebData.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\EntityFramework.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\EntityFramework.SqlServer.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\LibGit2Sharp.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\Newtonsoft.Json.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Net.Http.Formatting.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.Helpers.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.Http.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.Http.WebHost.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.Mvc.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.Razor.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.WebPages.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.WebPages.Deployment.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.WebPages.Razor.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\WebMatrix.Data.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\Microsoft.Web.WebPages.OAuth.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\WebMatrix.WebData.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\DotNetOpenAuth.AspNet.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\DotNetOpenAuth.Core.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.Consumer.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Web.Http.OData.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\Microsoft.Data.Edm.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\Microsoft.Data.OData.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\System.Spatial.xml
+G:\TA\Source\1.4\GitCode\GitCode\bin\de\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\es\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\fr\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\it\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\ja\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\ko\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\ru\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\de\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\es\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\fr\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\it\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\ja\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\ko\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\ru\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\de\System.Spatial.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\es\System.Spatial.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\fr\System.Spatial.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\it\System.Spatial.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\ja\System.Spatial.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\ko\System.Spatial.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\ru\System.Spatial.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\zh-Hans\System.Spatial.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\bin\zh-Hant\System.Spatial.resources.dll
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.Migrations.InitialCreate.resources
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.Migrations.newEntity.resources
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.Migrations.newEntitydetailclassaccess.resources
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.Migrations.newAtributeindetailclassaccess.resources
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.Migrations.removePKAddFK.resources
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.Migrations.addNewTableRepo.resources
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.Migrations.newChangeDB.resources
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.Migrations.repositoryChanging.resources
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.Migrations.newEntityFeature.resources
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.Migrations.add4Entity.resources
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.csproj.GenerateResource.Cache
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.dll
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.pdb
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.Migrations.changeRepo.resources
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.Migrations.changeIssueModel.resources
+G:\TA\Source\1.4\GitCode\GitCode\obj\Debug\GitCode.csprojResolveAssemblyReference.cache
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.csprojResolveAssemblyReference.cache
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.Migrations.InitialCreate.resources
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.Migrations.newEntity.resources
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.Migrations.newEntitydetailclassaccess.resources
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.Migrations.newAtributeindetailclassaccess.resources
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.Migrations.removePKAddFK.resources
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.Migrations.addNewTableRepo.resources
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.Migrations.newChangeDB.resources
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.Migrations.repositoryChanging.resources
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.Migrations.newEntityFeature.resources
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.Migrations.add4Entity.resources
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.Migrations.changeRepo.resources
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.Migrations.changeIssueModel.resources
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.csproj.GenerateResource.Cache
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.dll
+G:\TA\Source\1.8\GitCode\GitCode\obj\Debug\GitCode.pdb
+G:\TA\Source\1.8\GitCode\GitCode\bin\GitCode.dll.config
+G:\TA\Source\1.8\GitCode\GitCode\bin\GitCode.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\GitCode.pdb
+G:\TA\Source\1.8\GitCode\GitCode\bin\Antlr3.Runtime.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\DotNetOpenAuth.AspNet.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\DotNetOpenAuth.Core.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.Consumer.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\EntityFramework.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\EntityFramework.SqlServer.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\ICSharpCode.SharpZipLib.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\LibGit2Sharp.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\Microsoft.Data.Edm.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\Microsoft.Data.OData.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\Microsoft.Web.Infrastructure.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\Microsoft.Web.WebPages.OAuth.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\Newtonsoft.Json.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Net.Http.Formatting.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Spatial.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.Helpers.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.Http.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.Http.OData.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.Http.WebHost.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.Mvc.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.Optimization.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.Razor.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.WebPages.Deployment.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.WebPages.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.WebPages.Razor.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\WebGrease.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\WebMatrix.Data.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\WebMatrix.WebData.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\EntityFramework.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\EntityFramework.SqlServer.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\LibGit2Sharp.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\Newtonsoft.Json.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Net.Http.Formatting.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.Helpers.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.Http.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.Http.WebHost.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.Mvc.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.Razor.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.WebPages.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.WebPages.Deployment.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.WebPages.Razor.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\WebMatrix.Data.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\Microsoft.Web.WebPages.OAuth.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\WebMatrix.WebData.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\DotNetOpenAuth.AspNet.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\DotNetOpenAuth.Core.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.Consumer.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\DotNetOpenAuth.OAuth.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Web.Http.OData.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\Microsoft.Data.Edm.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\Microsoft.Data.OData.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\System.Spatial.xml
+G:\TA\Source\1.8\GitCode\GitCode\bin\de\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\es\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\fr\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\it\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\ja\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\ko\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\ru\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\de\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\es\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\fr\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\it\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\ja\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\ko\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\ru\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\de\System.Spatial.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\es\System.Spatial.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\fr\System.Spatial.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\it\System.Spatial.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\ja\System.Spatial.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\ko\System.Spatial.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\ru\System.Spatial.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\zh-Hans\System.Spatial.resources.dll
+G:\TA\Source\1.8\GitCode\GitCode\bin\zh-Hant\System.Spatial.resources.dll

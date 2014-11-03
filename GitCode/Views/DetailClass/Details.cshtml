@@ -1,0 +1,29 @@
+﻿@model GitCode.Models.DetailClass
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>DetailClass</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Team.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Team.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Class.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Class.Name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.DetailClassId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

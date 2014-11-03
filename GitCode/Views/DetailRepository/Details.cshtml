@@ -1,0 +1,36 @@
+﻿@model GitCode.Models.DetailRepository
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>DetailRepository</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsOwner)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsOwner)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.User.Username)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.User.Username)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Repository.IsPublic)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Repository.IsPublic)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.DetailRepositoryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

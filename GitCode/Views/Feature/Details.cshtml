@@ -1,0 +1,29 @@
+﻿@model GitCode.Models.Feature
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Feature</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Detail)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Detail)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Repository.User)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Repository.User)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.FeatureId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

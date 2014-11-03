@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="GitCodeEDM" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="GitCodeEDMContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Users" EntityType="GitCodeEDM.User" />
+    <EntitySet Name="Teams" EntityType="GitCodeEDM.Team" />
+    <EntitySet Name="DetailTeams" EntityType="GitCodeEDM.DetailTeam" />
+    <AssociationSet Name="UserDetailTeam" Association="GitCodeEDM.UserDetailTeam">
+      <End Role="User" EntitySet="Users" />
+      <End Role="DetailTeam" EntitySet="DetailTeams" />
+    </AssociationSet>
+    <AssociationSet Name="TeamDetailTeam" Association="GitCodeEDM.TeamDetailTeam">
+      <End Role="Team" EntitySet="Teams" />
+      <End Role="DetailTeam" EntitySet="DetailTeams" />
+    </AssociationSet>
+    <EntitySet Name="Classes" EntityType="GitCodeEDM.Class" />
+    <EntitySet Name="DetailClasses" EntityType="GitCodeEDM.DetailClass" />
+    <AssociationSet Name="TeamDetailClass" Association="GitCodeEDM.TeamDetailClass">
+      <End Role="Team" EntitySet="Teams" />
+      <End Role="DetailClass" EntitySet="DetailClasses" />
+    </AssociationSet>
+    <AssociationSet Name="ClassDetailClass" Association="GitCodeEDM.ClassDetailClass">
+      <End Role="Class" EntitySet="Classes" />
+      <End Role="DetailClass" EntitySet="DetailClasses" />
+    </AssociationSet>
+    <EntitySet Name="DetailClassAccesses" EntityType="GitCodeEDM.DetailClassAccess" />
+    <AssociationSet Name="UserDetailClassAccess" Association="GitCodeEDM.UserDetailClassAccess">
+      <End Role="User" EntitySet="Users" />
+      <End Role="DetailClassAccess" EntitySet="DetailClassAccesses" />
+    </AssociationSet>
+    <AssociationSet Name="ClassDetailClassAccess" Association="GitCodeEDM.ClassDetailClassAccess">
+      <End Role="Class" EntitySet="Classes" />
+      <End Role="DetailClassAccess" EntitySet="DetailClassAccesses" />
+    </AssociationSet>
+    <EntitySet Name="DetailRepositories" EntityType="GitCodeEDM.DetailRepository" />
+    <EntitySet Name="Repositories" EntityType="GitCodeEDM.Repository" />
+    <AssociationSet Name="UserDetailRepository" Association="GitCodeEDM.UserDetailRepository">
+      <End Role="User" EntitySet="Users" />
+      <End Role="DetailRepository" EntitySet="DetailRepositories" />
+    </AssociationSet>
+    <AssociationSet Name="RepositoryDetailRepository" Association="GitCodeEDM.RepositoryDetailRepository">
+      <End Role="Repository" EntitySet="Repositories" />
+      <End Role="DetailRepository" EntitySet="DetailRepositories" />
+    </AssociationSet>
+    <EntitySet Name="Features" EntityType="GitCodeEDM.Feature" />
+    <AssociationSet Name="RepositoryFeature" Association="GitCodeEDM.RepositoryFeature">
+      <End Role="Repository" EntitySet="Repositories" />
+      <End Role="Feature" EntitySet="Features" />
+    </AssociationSet>
+    <EntitySet Name="Issues" EntityType="GitCodeEDM.Issue" />
+    <EntitySet Name="Wikis" EntityType="GitCodeEDM.Wiki" />
+    <EntitySet Name="Comments" EntityType="GitCodeEDM.Comment" />
+    <EntitySet Name="WikiDetails" EntityType="GitCodeEDM.WikiDetail" />
+    <AssociationSet Name="IssueComment" Association="GitCodeEDM.IssueComment">
+      <End Role="Issue" EntitySet="Issues" />
+      <End Role="Comment" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="RepositoryIssue" Association="GitCodeEDM.RepositoryIssue">
+      <End Role="Repository" EntitySet="Repositories" />
+      <End Role="Issue" EntitySet="Issues" />
+    </AssociationSet>
+    <AssociationSet Name="UserIssue" Association="GitCodeEDM.UserIssue">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Issue" EntitySet="Issues" />
+    </AssociationSet>
+    <AssociationSet Name="UserComment" Association="GitCodeEDM.UserComment">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Comment" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="RepositoryWiki" Association="GitCodeEDM.RepositoryWiki">
+      <End Role="Repository" EntitySet="Repositories" />
+      <End Role="Wiki" EntitySet="Wikis" />
+    </AssociationSet>
+    <AssociationSet Name="WikiWikiDetail" Association="GitCodeEDM.WikiWikiDetail">
+      <End Role="Wiki" EntitySet="Wikis" />
+      <End Role="WikiDetail" EntitySet="WikiDetails" />
+    </AssociationSet>
+    <AssociationSet Name="TeamRepository" Association="GitCodeEDM.TeamRepository">
+      <End Role="Team" EntitySet="Teams" />
+      <End Role="Repository" EntitySet="Repositories" />
+    </AssociationSet>
+    <EntitySet Name="GitCodeBases" EntityType="GitCodeEDM.GitCodeBase" />
+  </EntityContainer>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" Nullable="false" />
+    <Property Name="Email" Type="String" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" />
+    <NavigationProperty Name="DetailTeams" Relationship="GitCodeEDM.UserDetailTeam" FromRole="User" ToRole="DetailTeam" />
+    <NavigationProperty Name="DetailClassAccesses" Relationship="GitCodeEDM.UserDetailClassAccess" FromRole="User" ToRole="DetailClassAccess" />
+    <NavigationProperty Name="DetailRepositories" Relationship="GitCodeEDM.UserDetailRepository" FromRole="User" ToRole="DetailRepository" />
+    <NavigationProperty Name="Issues" Relationship="GitCodeEDM.UserIssue" FromRole="User" ToRole="Issue" />
+    <NavigationProperty Name="Comments" Relationship="GitCodeEDM.UserComment" FromRole="User" ToRole="Comment" />
+    <Property Name="Role" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Team">
+    <Key>
+      <PropertyRef Name="TeamId" />
+    </Key>
+    <Property Name="TeamId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <NavigationProperty Name="DetailTeams" Relationship="GitCodeEDM.TeamDetailTeam" FromRole="Team" ToRole="DetailTeam" />
+    <NavigationProperty Name="DetailClasses" Relationship="GitCodeEDM.TeamDetailClass" FromRole="Team" ToRole="DetailClass" />
+    <NavigationProperty Name="Repositories" Relationship="GitCodeEDM.TeamRepository" FromRole="Team" ToRole="Repository" />
+  </EntityType>
+  <EntityType Name="DetailTeam">
+    <Key>
+      <PropertyRef Name="DetailTeamId" />
+    </Key>
+    <Property Name="DetailTeamId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="User" Relationship="GitCodeEDM.UserDetailTeam" FromRole="DetailTeam" ToRole="User" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Team" Relationship="GitCodeEDM.TeamDetailTeam" FromRole="DetailTeam" ToRole="Team" />
+    <Property Name="TeamId" Type="Int32" Nullable="false" />
+    <Property Name="IsOwner" Type="String" Nullable="false" />
+    <Property Name="Role" Type="String" Nullable="false" />
+  </EntityType>
+  <Association Name="UserDetailTeam">
+    <End Type="GitCodeEDM.User" Role="User" Multiplicity="1" />
+    <End Type="GitCodeEDM.DetailTeam" Role="DetailTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="DetailTeam">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TeamDetailTeam">
+    <End Type="GitCodeEDM.Team" Role="Team" Multiplicity="1" />
+    <End Type="GitCodeEDM.DetailTeam" Role="DetailTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="TeamId" />
+      </Principal>
+      <Dependent Role="DetailTeam">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Class">
+    <Key>
+      <PropertyRef Name="ClassId" />
+    </Key>
+    <Property Name="ClassId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <NavigationProperty Name="DetailClasses" Relationship="GitCodeEDM.ClassDetailClass" FromRole="Class" ToRole="DetailClass" />
+    <NavigationProperty Name="DetailClassAccesses" Relationship="GitCodeEDM.ClassDetailClassAccess" FromRole="Class" ToRole="DetailClassAccess" />
+  </EntityType>
+  <EntityType Name="DetailClass">
+    <Key>
+      <PropertyRef Name="TeamId" />
+      <PropertyRef Name="ClassId" />
+    </Key>
+    <Property Name="DetailClassId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Team" Relationship="GitCodeEDM.TeamDetailClass" FromRole="DetailClass" ToRole="Team" />
+    <Property Name="TeamId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Class" Relationship="GitCodeEDM.ClassDetailClass" FromRole="DetailClass" ToRole="Class" />
+    <Property Name="ClassId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="TeamDetailClass">
+    <End Type="GitCodeEDM.Team" Role="Team" Multiplicity="1" />
+    <End Type="GitCodeEDM.DetailClass" Role="DetailClass" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="TeamId" />
+      </Principal>
+      <Dependent Role="DetailClass">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ClassDetailClass">
+    <End Type="GitCodeEDM.Class" Role="Class" Multiplicity="1" />
+    <End Type="GitCodeEDM.DetailClass" Role="DetailClass" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Class">
+        <PropertyRef Name="ClassId" />
+      </Principal>
+      <Dependent Role="DetailClass">
+        <PropertyRef Name="ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="DetailClassAccess">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="ClassId" />
+    </Key>
+    <Property Name="DetailClassAccessId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="User" Relationship="GitCodeEDM.UserDetailClassAccess" FromRole="DetailClassAccess" ToRole="User" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Class" Relationship="GitCodeEDM.ClassDetailClassAccess" FromRole="DetailClassAccess" ToRole="Class" />
+    <Property Name="ClassId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="UserDetailClassAccess">
+    <End Type="GitCodeEDM.User" Role="User" Multiplicity="1" />
+    <End Type="GitCodeEDM.DetailClassAccess" Role="DetailClassAccess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="DetailClassAccess">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ClassDetailClassAccess">
+    <End Type="GitCodeEDM.Class" Role="Class" Multiplicity="1" />
+    <End Type="GitCodeEDM.DetailClassAccess" Role="DetailClassAccess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Class">
+        <PropertyRef Name="ClassId" />
+      </Principal>
+      <Dependent Role="DetailClassAccess">
+        <PropertyRef Name="ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="DetailRepository">
+    <Key>
+      <PropertyRef Name="DetailRepositoryId" />
+    </Key>
+    <Property Name="DetailRepositoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IsOwner" Type="String" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="GitCodeEDM.UserDetailRepository" FromRole="DetailRepository" ToRole="User" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Repository" Relationship="GitCodeEDM.RepositoryDetailRepository" FromRole="DetailRepository" ToRole="Repository" />
+    <Property Name="RepositoryId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Repository">
+    <Key>
+      <PropertyRef Name="RepositoryId" />
+    </Key>
+    <Property Name="RepositoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IsPublic" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="DetailRepositories" Relationship="GitCodeEDM.RepositoryDetailRepository" FromRole="Repository" ToRole="DetailRepository" />
+    <Property Name="RepoHeadDirectory" Type="String" Nullable="false" />
+    <Property Name="RepoChildDirectory" Type="String" Nullable="false" />
+    <Property Name="IsPublicRead" Type="Boolean" Nullable="false" />
+    <Property Name="IsPublicWrite" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Features" Relationship="GitCodeEDM.RepositoryFeature" FromRole="Repository" ToRole="Feature" />
+    <NavigationProperty Name="Issues" Relationship="GitCodeEDM.RepositoryIssue" FromRole="Repository" ToRole="Issue" />
+    <NavigationProperty Name="Wiki" Relationship="GitCodeEDM.RepositoryWiki" FromRole="Repository" ToRole="Wiki" />
+    <NavigationProperty Name="Team" Relationship="GitCodeEDM.TeamRepository" FromRole="Repository" ToRole="Team" />
+    <Property Name="TeamId" Type="Int32" Nullable="true" />
+  </EntityType>
+  <Association Name="UserDetailRepository">
+    <End Type="GitCodeEDM.User" Role="User" Multiplicity="1" />
+    <End Type="GitCodeEDM.DetailRepository" Role="DetailRepository" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="DetailRepository">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RepositoryDetailRepository">
+    <End Type="GitCodeEDM.Repository" Role="Repository" Multiplicity="1" />
+    <End Type="GitCodeEDM.DetailRepository" Role="DetailRepository" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Repository">
+        <PropertyRef Name="RepositoryId" />
+      </Principal>
+      <Dependent Role="DetailRepository">
+        <PropertyRef Name="RepositoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Feature">
+    <Key>
+      <PropertyRef Name="FeatureId" />
+    </Key>
+    <Property Name="FeatureId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Detail" Type="String" Nullable="false" />
+    <NavigationProperty Name="Repository" Relationship="GitCodeEDM.RepositoryFeature" FromRole="Feature" ToRole="Repository" />
+    <Property Name="RepositoryRepositoryId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="RepositoryFeature">
+    <End Type="GitCodeEDM.Repository" Role="Repository" Multiplicity="1" />
+    <End Type="GitCodeEDM.Feature" Role="Feature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Repository">
+        <PropertyRef Name="RepositoryId" />
+      </Principal>
+      <Dependent Role="Feature">
+        <PropertyRef Name="RepositoryRepositoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Issue">
+    <Key>
+      <PropertyRef Name="IssueId" />
+    </Key>
+    <Property Name="IssueId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Comments" Relationship="GitCodeEDM.IssueComment" FromRole="Issue" ToRole="Comment" />
+    <NavigationProperty Name="Repository" Relationship="GitCodeEDM.RepositoryIssue" FromRole="Issue" ToRole="Repository" />
+    <Property Name="RepositoryId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="GitCodeEDM.UserIssue" FromRole="Issue" ToRole="User" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" />
+    <Property Name="Content" Type="String" Nullable="false" />
+    <Property Name="When" Type="String" Nullable="false" />
+    <Property Name="IsClear" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Wiki">
+    <Key>
+      <PropertyRef Name="WikiId" />
+    </Key>
+    <Property Name="WikiId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Repository" Relationship="GitCodeEDM.RepositoryWiki" FromRole="Wiki" ToRole="Repository" />
+    <Property Name="Title" Type="String" Nullable="false" />
+    <Property Name="Content" Type="String" Nullable="false" />
+    <NavigationProperty Name="WikiDetails" Relationship="GitCodeEDM.WikiWikiDetail" FromRole="Wiki" ToRole="WikiDetail" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="CommentId" />
+    </Key>
+    <Property Name="CommentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Issue" Relationship="GitCodeEDM.IssueComment" FromRole="Comment" ToRole="Issue" />
+    <Property Name="IssueId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="GitCodeEDM.UserComment" FromRole="Comment" ToRole="User" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Content" Type="String" Nullable="false" />
+    <Property Name="When" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WikiDetail">
+    <Key>
+      <PropertyRef Name="WikiDetailId" />
+    </Key>
+    <Property Name="WikiDetailId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ImagePath" Type="String" Nullable="false" />
+    <NavigationProperty Name="Wiki" Relationship="GitCodeEDM.WikiWikiDetail" FromRole="WikiDetail" ToRole="Wiki" />
+    <Property Name="WikiId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="IssueComment">
+    <End Type="GitCodeEDM.Issue" Role="Issue" Multiplicity="1" />
+    <End Type="GitCodeEDM.Comment" Role="Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Issue">
+        <PropertyRef Name="IssueId" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="IssueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RepositoryIssue">
+    <End Type="GitCodeEDM.Repository" Role="Repository" Multiplicity="1" />
+    <End Type="GitCodeEDM.Issue" Role="Issue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Repository">
+        <PropertyRef Name="RepositoryId" />
+      </Principal>
+      <Dependent Role="Issue">
+        <PropertyRef Name="RepositoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserIssue">
+    <End Type="GitCodeEDM.User" Role="User" Multiplicity="1" />
+    <End Type="GitCodeEDM.Issue" Role="Issue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Issue">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserComment">
+    <End Type="GitCodeEDM.User" Role="User" Multiplicity="1" />
+    <End Type="GitCodeEDM.Comment" Role="Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RepositoryWiki">
+    <End Type="GitCodeEDM.Repository" Role="Repository" Multiplicity="1" />
+    <End Type="GitCodeEDM.Wiki" Role="Wiki" Multiplicity="1" />
+  </Association>
+  <Association Name="WikiWikiDetail">
+    <End Type="GitCodeEDM.Wiki" Role="Wiki" Multiplicity="1" />
+    <End Type="GitCodeEDM.WikiDetail" Role="WikiDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Wiki">
+        <PropertyRef Name="WikiId" />
+      </Principal>
+      <Dependent Role="WikiDetail">
+        <PropertyRef Name="WikiId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TeamRepository">
+    <End Type="GitCodeEDM.Team" Role="Team" Multiplicity="0..1" />
+    <End Type="GitCodeEDM.Repository" Role="Repository" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="TeamId" />
+      </Principal>
+      <Dependent Role="Repository">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="GitCodeBase">
+    <Key>
+      <PropertyRef Name="GitCodeBaseId" />
+    </Key>
+    <Property Name="GitCodeBaseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AboutContent" Type="String" Nullable="false" />
+    <Property Name="GitPath" Type="String" Nullable="false" />
+    <Property Name="RepositoryPath" Type="String" Nullable="false" />
+    <Property Name="CommitContent" Type="String" Nullable="false" />
+    <Property Name="ClassContent" Type="String" Nullable="false" />
+    <Property Name="TeamContent" Type="String" Nullable="false" />
+    <Property Name="HomeContent" Type="String" Nullable="false" />
+  </EntityType>
+</Schema>

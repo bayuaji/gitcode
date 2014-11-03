@@ -1,0 +1,43 @@
+﻿@model GitCode.Models.DetailTeam
+
+@{
+    var listuser = ViewData["userList"] as List<string>;
+    ViewBag.Title = "Create";
+}
+
+@using (Html.BeginForm("AddUser", "DetailTeam"))
+{
+    <input type="hidden" name="teamname" value="@ViewBag.TeamName" />
+    <input id="username" name="username" autocomplete="off" type="text" placeholder="Username">
+    <input type="submit" value="Add" />
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+<script>
+
+    $('#username').typeahead({
+    source: function (request, response) {
+        var customer = new Array();
+        $.ajax({
+            async: false,
+            cache: false,
+            type: "POST",
+            url: "@(Url.Action("AutoCompleteClassUser", "DetailTeam", new { idclass = ViewBag.idClass }))",
+            data: { 'term' : request.term },
+            success: function (data) {
+                for (var i = 0; i < data.length ; i++) {
+                    customer[i] = data[i];
+                }
+            }
+        });
+        response(customer);
+    }
+});
+    function toTree() {
+        var x = document.getElementById("search").value;
+        window.location.assign("Repository/Tree/" + x + "/master")
+        //window.open("Repository/Tree/" + x + "/master","_self");
+    }
+</script>

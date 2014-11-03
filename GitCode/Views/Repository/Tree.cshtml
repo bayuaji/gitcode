@@ -1,0 +1,92 @@
+﻿@model GitCode.Models.CommitModel
+
+@{
+    ViewBag.SideBar = "True";
+    ViewBag.Title = "Tree";
+}
+
+
+@Styles.Render("~/Content/dropdownstyle")
+
+<h2>Commit</h2>
+@if (Model != null)
+{
+    <div style="padding-right:0;background-color:aqua">
+        <table style="width: 100%; table-layout: fixed; text-align:center; " class="table-striped" cellpadding="0" cellspacing="0">
+            <tr>
+                @if (ViewData.ContainsKey("SHA"))
+                {
+                    <td>
+                        @Html.ActionLink(ViewData["CommitElement"] + " Commit", "Commit", new { path = Model.GitPath + "/" + ViewData["CurrentBranch"] + "/" + ViewData["SHA"] }, new { @class = "PanelButton" })
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        @Html.ActionLink(ViewData["CommitElement"] + " Commit", "Commit", new { path = Model.GitPath + "/" + ViewData["CurrentBranch"] }, new { @class = "PanelButton" })
+                    </td>
+                }
+                <td>
+                    @Html.ActionLink(ViewData["BranchElement"] + " Branch", "Branch", new { path = Model.GitPath + "/" + ViewData["CurrentBranch"] }, new { @class = "PanelButton" })
+                </td>
+                <td>
+                    @Html.ActionLink(ViewData["BranchElement"] + " Release", "Tag", new { path = Model.GitPath + "/" + ViewData["CurrentBranch"] }, new { @class = "PanelButton" })
+                </td>
+                <td>
+                    @Html.ActionLink(ViewData["ContributorElement"] + " Contributor", "Contributor", new { path = Model.GitPath + "/" + ViewData["CurrentBranch"] }, new { @class = "PanelButton" })
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        @Html.Partial("_Branch", new ViewDataDictionary { { "Branch", ViewData["Branch"] as IEnumerable<string> }, { "Path", Model.GitPath }, { "Tag", ViewData["Tag"] as IEnumerable<string> }, { "CurrentBranch", ViewData["CurrentBranch"]} })
+    </div>
+    <div style="width:200px;height:50px;">
+        @if (ViewData.ContainsKey("SHA"))
+        {
+            @Html.ActionLink("Download", "Archive", "Repository", new { path = GitCode.Models.PagePropertiesModel.projectName + "/" + ViewData["CurrentBranch"] + "/" + ViewData["SHA"] }, new { @class = "ButtonLink" })
+        }else{
+            @Html.ActionLink("Download", "Archive", "Repository", new { path = GitCode.Models.PagePropertiesModel.projectName + "/" + ViewData["CurrentBranch"] + "/" }, new { @class = "ButtonLink" })
+        }
+
+    </div>
+    <table cellpadding="0" cellspacing="0" style="width:100%;padding-right: 10px;" class="table  table-striped">
+        <tr>
+            <td colspan="2">
+                @Html.ActionLink(Model.ShortMessage, "CommitDetail", new { path = Model.GitPath + "/" + ViewData["CurrentBranch"] + "/" + Model.SHA }, null)
+            </td>
+        </tr>
+        <tr>
+            <td style="width:80%;">
+                <b>@Model.Author.Name   </b> @Model.Author.When
+            </td>
+            <td style="width: 20%; text-align: right;">
+                @Model.CommitCode
+            </td>
+        </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" style="width: 100%; padding-right: 10px; table-layout: fixed;" class="table table-hover">
+        @foreach (var itemTree in Model.TreeEntry)
+        {
+            <tr>
+                <td>
+                    @itemTree.Name
+                </td>
+                <td>
+                    @if (itemTree.Commit != null)
+                    {
+                        @itemTree.Commit.MessageShort;
+                    }
+                </td>
+                <td>
+                    @if (itemTree.Commit != null)
+                    {
+                        @itemTree.Commit.Author.When;
+                    }
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+

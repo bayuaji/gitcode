@@ -1,0 +1,68 @@
+﻿@model GitCode.Models.GitCodeBase
+
+@{
+    ViewBag.Background = "Blue";
+    ViewBag.Title = "Setting";
+}
+
+<h2>Setting</h2>
+
+@using (Html.BeginForm("Setting", "GitCode"))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Repository</legend>
+
+        <div class="editor-label">
+            Git Path
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.GitPath)
+            @Html.ValidationMessageFor(model => model.GitPath)
+        </div>
+
+        <div class="editor-label">
+            Repository Path
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RepositoryPath)
+            @Html.ValidationMessageFor(model => model.RepositoryPath)
+        </div>
+
+        <div class="editor-label">
+            Cache Path
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CachePath)
+            @Html.ValidationMessageFor(model => model.CachePath)
+        </div>
+
+        <div class="editor-label">
+            About Content
+        </div>
+            @Html.TextAreaFor(model => model.AboutContent)
+
+        <div class="editor-label">
+            Commit Content
+        </div>
+            @Html.TextAreaFor(model => model.CommitContent)
+        
+        <div class="editor-label">
+            Team Content
+        </div>          
+            @Html.TextAreaFor(model => model.TeamContent)
+        
+
+        <div class="editor-label">
+            Home Content
+        </div>
+        
+            @Html.EditorFor(model => model.HomeContent)
+        
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}

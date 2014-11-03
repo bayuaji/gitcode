@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - GitCode</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/jquery")
+        <link href="/Content/jHtmlArea.css" rel="Stylesheet" />
+        <link href="/Content/jHtmlArea.ColorPickerMenu.css" rel="stylesheet" />       
+    </head>
+<body>
+    <header>
+            <div class="content-wrapper">
+            <div style="text-align:center;">
+                <p class="site-title">@Html.ActionLink("Gitcode", "Index", "Repository")</p>
+            </div>
+            <div style="text-align:center">
+                <section id="login">
+                    @Html.Partial("_LoginPartial")
+                </section>
+                <nav>
+                    @Styles.Render("~/Content/bootstrapstyle")
+                    <ul id="menu" style="text-align:center;">
+                        <li>@Html.ActionLink("Home", "Index", "Repository")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        @if (WebSecurity.IsAuthenticated)
+                        {
+                            <li>@Html.ActionLink("Repository", "MyRepository", "Repository")</li>
+                            <li>@Html.ActionLink("Team", "Index", "Team")</li>
+                            <li>@Html.ActionLink("Class", "Index", "Class")</li>
+                            if (ViewBag.isAdmin == "true" || GitCode.Models.PagePropertiesModel.isAdmin)
+                            { 
+                            <li>@Html.ActionLink("User", "AllUser", "User")</li>
+                            <li>@Html.ActionLink("Setting", "Setting", "GitCode")</li>
+                            }
+                        }
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="body">
+        @RenderSection("featured", required: false)
+        <section class="content-wrapper main-content clear-fix">
+            <table style="width:100%; " cellpadding="0" cellspacing="0" >
+                <tr>
+                    @if(ViewBag.Background == "Blue")
+                    {
+                        <td style="vertical-align:top;">
+                        @RenderBody()
+                        </td> 
+                    }
+                    else {
+                        <td style="vertical-align:top;background-color:#fff;">
+                        @RenderBody()
+                        </td> 
+                    }
+                    
+                    @if (ViewBag.SideBar == "True")
+                    {
+                        <td style="width: 200px; " valign="top">
+                            @Html.Partial("_PanelRight")
+                        </td>
+                    }
+                </tr>
+            </table>
+        </section>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>&copy; @DateTime.Now.Year - GitCode</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="/Scripts/jHtmlArea-0.8.js"></script>
+    <script src="/Scripts/jHtmlArea.ColorPickerMenu-0.8.min.js"></script>
+
+    <script>
+
+        $('#coba').htmlarea({ toolbar: [["bold", "italic", "underline", "|", "forecolor"],
+        ["he1", "he2", "he3", "he4", "he5", "he6"], ["link", "unlink"]]
+        });
+
+        
+        $('#coba2').htmlarea({
+            toolbar: [["bold", "italic", "underline", "|", "forecolor"],
+            ["he1", "he2", "he3", "he4", "he5", "he6"], ["link", "unlink"]]
+        });
+
+        $('#coba3').htmlarea({
+            toolbar: [["bold", "italic", "underline", "|", "forecolor"],
+            ["he1", "he2", "he3", "he4", "he5", "he6"], ["link", "unlink"]]
+        });
+        var html = $("#cc").htmlarea("toHtmlString");
+        $('#cc').click(function () {
+            alert(html.value);
+        });
+
+    </script>
+
+    @if (IsSectionDefined("Scripts"))
+    {
+        @RenderSection("Scripts");
+    }
+    <!--
+        <script src="/Scripts/markitup/jquery.markitup.js"></script>
+    <script src="/Scripts/markitup/set.js"></script>
+    
+    <script>
+        $('#coba').markItUp(myWikiSettings);
+    </script>
+    -->
+</body>
+</html>

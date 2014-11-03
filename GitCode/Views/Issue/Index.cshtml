@@ -1,0 +1,96 @@
+﻿@model List<GitCode.Models.Issue>
+
+@{
+    ViewBag.SideBar = "True";
+    ViewBag.Title = "Index";
+}
+
+<div style="float:right">
+    @Html.ActionLink("New Issue", "Create", null, new { @class = "ButtonLink" })
+</div>
+
+<form>
+    <ul class="nav nav-tabs">
+        <li><a href="#branch-pane" data-toggle="tab">Open</a></li>
+        <li><a href="#tag-pane" data-toggle="tab">Closed</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active branch-selector" id="branch-pane">
+            <table class="table table-bordered table-striped">
+                @foreach (var item in Model.Where(m=>m.IsClear==false))
+                {
+                <tr>
+                    <td>
+                        <table style="margin-top:0px;">
+                            <tr>
+                                <td colspan="2">
+                                    <b>@Html.ActionLink(item.Title, "Details", new { id = item.IssueId })</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Content)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.IssueId }) |
+                                    @Html.ActionLink("Details", "Details", new { id = item.IssueId }) |
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:50%">
+                                    by @Html.DisplayFor(modelItem => item.User.Username)
+                                </td>
+                                <td style="text-align:right;">
+                                    @Html.DisplayFor(modelItem => item.When)
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </td>
+                </tr>
+                }
+            </table>            
+        </div>
+        <div class="tab-pane branch-name branch-selector" id="tag-pane">
+            <table class="table table-bordered table-striped">
+                @foreach (var item in Model.Where(m=>m.IsClear ==  true))
+                {
+                    <tr>
+                    <td>
+                        <table style="margin-top:0px;">
+                            <tr>
+                                <td colspan="2">
+                                    <b>@Html.ActionLink(item.Title, "Details", new { id = item.IssueId })</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Content)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.IssueId }) |
+                                    @Html.ActionLink("Details", "Details", new { id = item.IssueId }) |
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:50%">
+                                    by @Html.DisplayFor(modelItem => item.User.Username)
+                                </td>
+                                <td style="text-align:right;">
+                                    @Html.DisplayFor(modelItem => item.When)
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</form>
+
+
+
+
+

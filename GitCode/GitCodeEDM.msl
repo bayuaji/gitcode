@@ -1,0 +1,5 @@
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="GitCodeEDM" />
+  <Alias Key="Target" Value="GitCodeEDM.Store" />
+  <EntityContainerMapping CdmEntityContainer="GitCodeEDMContainer" StorageEntityContainer="GitCodeEDMTargetContainer"></EntityContainerMapping>
+</Mapping>

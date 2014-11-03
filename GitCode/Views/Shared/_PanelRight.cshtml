@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "_PanelRight";
+}
+
+@Styles.Render("~/Content/contentcss")
+@{
+    var url = Request.Url;
+    var baseurl = url.GetLeftPart(UriPartial.Authority);
+    var urlGit = baseurl + "/" + GitCode.Models.PagePropertiesModel.projectName + ".git";
+}
+<table style="text-align: center; width: 200px; table-layout: fixed; margin-top: 0px; margin-left: 2px; background-color: #fff" class="table-bordered table-responsive table-striped">
+    <tr>
+        <td>
+            @Html.ActionLink("Code", "Tree", "Repository", new { path = @GitCode.Models.PagePropertiesModel.projectName + "/master" }, new { @class = "PanelButton" })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.ActionLink("Wiki", "Details", "Wiki", new { path = @GitCode.Models.PagePropertiesModel.projectName }, new { @class = "PanelButton" })
+        </td>
+    </tr>
+    <tr>
+        <td>            
+            @Html.ActionLink("Feature", "Index", "Feature", new { path = @GitCode.Models.PagePropertiesModel.projectName }, new { @class = "PanelButton" })
+        </td>
+    </tr>
+    <tr>
+        <td>            
+            @Html.ActionLink("Issue", "Index", "Issue", new { path = GitCode.Models.PagePropertiesModel.projectName }, new { @class = "PanelButton" })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.ActionLink("Setting", "Setting", "Repository", new { path = GitCode.Models.PagePropertiesModel.projectName }, new { @class = "PanelButton" })
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 200px" >
+            <textarea style="width: 200px">@urlGit</textarea>
+        </td>
+    </tr>
+</table>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

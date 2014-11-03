@@ -1,0 +1,3 @@
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl" Namespace="GitCodeEDM.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005">
+  <EntityContainer Name="GitCodeEDMTargetContainer"></EntityContainer>
+</Schema>

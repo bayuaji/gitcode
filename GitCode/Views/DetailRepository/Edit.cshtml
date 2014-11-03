@@ -1,0 +1,54 @@
+﻿@model GitCode.Models.DetailRepository
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>DetailRepository</legend>
+
+        @Html.HiddenFor(model => model.DetailRepositoryId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IsOwner)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IsOwner)
+            @Html.ValidationMessageFor(model => model.IsOwner)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UserId, "User")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("UserId", String.Empty)
+            @Html.ValidationMessageFor(model => model.UserId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RepositoryId, "Repository")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("RepositoryId", String.Empty)
+            @Html.ValidationMessageFor(model => model.RepositoryId)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

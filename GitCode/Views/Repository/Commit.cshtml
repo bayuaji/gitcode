@@ -1,0 +1,59 @@
+﻿@model IEnumerable<GitCode.Models.CommitModel>
+
+@{
+    ViewBag.SideBar = "True";
+    ViewBag.Title = "Commit";
+}
+
+@Styles.Render("~/Content/bootstrapstyle")
+
+@if(Model!=null)
+{ 
+    <div style="width:100%;text-align:center">
+        <h2>Commit</h2>
+    </div>
+<table style="margin-top:0px;" cellpadding="0" cellspacing="0" class="table table-striped">
+    <tr>
+        <th style="text-align:center;">
+            Feature
+        </th>
+        <th style="text-align:center;">
+            Commit Details
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            @if (item.Feature != "")
+            {
+                <td style="text-align:center;">
+                    #@Html.ActionLink(item.Feature, "Feature", new { path = item.GitPath + "/" + ViewData["CurrentBranch"] + "/" + item.SHA + "/" + item.Feature }, null)
+                </td>
+            }
+            else
+            {
+                <td style="text-align:center;">
+                    #
+                </td>
+            }
+            <td>
+                <table style="margin:0px;" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td colspan="2">
+                            @Html.ActionLink(item.ShortMessage, "CommitDetail", new { path = item.GitPath + "/" + ViewData["CurrentBranch"] + "/" + item.SHA }, null)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:20%;">
+                            <b>@item.Author.Name   </b>@item.Author.When
+                        </td>
+                        <td style="width:20%;text-align:right">
+                            @Html.ActionLink(item.CommitCode, "Tree", new { path = item.GitPath + "/" + ViewData["CurrentBranch"] + "/" + item.SHA }, null)
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    }
+</table>
+}

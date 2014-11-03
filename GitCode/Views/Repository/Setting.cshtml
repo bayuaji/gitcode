@@ -1,0 +1,116 @@
+﻿@model GitCode.Models.Repository
+
+@{
+    
+    ViewBag.SideBar = "True";
+    ViewBag.Title = "Setting";
+}
+
+<h2>Setting</h2>
+
+<ul class="nav nav-tabs">
+    <li><a href="#branch-pane" data-toggle="tab">Setting</a></li>
+    <li><a href="#tag-pane" data-toggle="tab">Contributor</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active branch-selector" id="branch-pane">
+        @using (Html.BeginForm("Edit","Repository"))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+
+            <fieldset>
+                <legend>Repository</legend>
+
+                @Html.HiddenFor(model => model.RepositoryId)
+                @Html.HiddenFor(model => model.User)
+                @Html.HiddenFor(model => model.Project)
+                @Html.HiddenFor(model => model.TeamId)
+                <div class="editor-label">
+                    Is Public
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.IsPublic)
+                    @Html.ValidationMessageFor(model => model.IsPublic)
+                </div>
+
+                <div class="editor-label">
+                    Short Description
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.ShortDescription)
+                    @Html.ValidationMessageFor(model => model.ShortDescription)
+                </div>
+
+                <p>
+                    <input type="submit" value="Save" />
+                </p>
+            </fieldset>
+        }
+    </div>
+    <div class="tab-pane branch-name branch-selector" id="tag-pane">
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>
+                    Username
+                </th>
+                <th></th>
+            </tr>
+            @foreach (var item in ViewBag.Collaborator as List<GitCode.Models.User>)
+            {
+                <tr>
+                    <td>
+                        @item.Username
+                    </td>
+                    <td>
+                        @using (Html.BeginForm("DeleteContributor", "Repository"))
+                        {
+                            @Html.HiddenFor(model => model.RepositoryId)
+                            <input type="hidden" name="UserId" value="@item.UserId" />
+                            <input type="submit" value="Delete" />
+                        }
+                    </td>
+                </tr>
+            }
+        </table>
+        <div>
+            <h4>New Contributor</h4>
+        @using (Html.BeginForm("AddContributor", "Repository"))
+        {
+            @Html.HiddenFor(model => model.RepositoryId)
+            @Html.HiddenFor(model => model.User)
+            @Html.HiddenFor(model => model.Project)
+            
+            <input id="username" name="username" autocomplete="off" type="text" placeholder="Username">
+            <input type="submit" value="Add" />
+        }
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $('#username').typeahead({
+    source: function (request, response) {
+        var customer = new Array();
+        $.ajax({
+            async: false,
+            cache: false,
+            type: "POST",
+            url: "@(Url.Action("AutoCompleteAllUser", "Repository"))",
+            data: { 'term' : request.term },
+            success: function (data) {
+                for (var i = 0; i < data.length ; i++) {
+                    customer[i] = data[i];
+                }
+            }
+        });
+        response(customer);
+    }
+});
+    function toTree() {
+        var x = document.getElementById("search").value;
+        window.location.assign("Repository/Tree/" + x + "/master")
+        //window.open("Repository/Tree/" + x + "/master","_self");
+    }
+</script>

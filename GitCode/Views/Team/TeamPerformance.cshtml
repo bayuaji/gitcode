@@ -1,0 +1,101 @@
+﻿@model List<GitCode.Models.Repository>
+
+@{
+    ViewBag.Title = "TeamPerformance";
+}
+
+<h2>TeamPerformance</h2>
+
+@if (Model.Any()) { 
+<table style="width:100%;" >
+    <tr style="vertical-align:top;">
+        <td style="width: 300px;">
+            <table class="table table-hover" style="width:100%; margin-top:0px;">
+                <tr>
+                    <th>
+                        Project Name
+                    </th>
+                    <th></th>
+                </tr>
+                @foreach (var project in Model)
+                {
+                    <tr>
+                        <td style="width:auto;">
+                            @Html.ActionLink(project.Project, "Tree", "Repository", new { path = project.User + "/" + project.Team + "/master" },null)
+                        </td>
+                        <td style="width:50px;text-align:right;">
+                            @Html.ActionLink("Performance", "TeamPerformance", "Team", new { teamID = ViewBag.CurrentTeam, repoID = project.RepositoryId }, null)
+                        </td>
+                    </tr>
+                }
+            </table>
+        </td>
+        <td style="width: auto; border-left-color: lightgray; border-left-style: double; border-left-width: medium">
+            @if (ViewBag.RecentCommit != null)
+        {
+            <table class="table table-striped" style="width:100%;margin-top:0px;">
+                <tr>
+                    <th colspan="2">
+                        <h3>Recent Commit</h3>
+                    </th>
+                </tr>
+                @foreach (var project in (ViewBag.RecentCommit as List<GitCode.Models.CommitModel>).Take(10))
+                {
+                    <tr>
+                        <td>
+                            <table style="width:100%;margin-top:0px;">
+                                <tr>
+                                    <td colspan="2">
+                                        @project.Message
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>@project.Author.Email   </b>@project.Author.When.DateTime
+                                    </td>
+                                    <td style="text-align:right;width:50px">
+                                        #@project.Feature
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                }
+            </table>
+                <br />
+            <table class="table table-hover">
+                <tr>
+                    <th>
+                        Username
+                    </th>
+                    <th>
+                        Number Commit
+                    </th>
+                    <th>
+                        Feature Contrib
+                    </th>
+                </tr>
+                @foreach (var project in ViewBag.Contributor as List<GitCode.Models.ContributorModel>)
+                {
+                    <tr>
+                        <td>
+                            @project.contributorEmail
+                        </td>
+                        <td>
+                            
+                            <progress value="@project.commitContrib" max="@ViewBag.MaxCommit">
+                            </progress>
+                            
+                        </td>
+                        <td>
+                            <progress value="@project.featureContrib" max="@ViewBag.MaxFeature">
+                            </progress>
+                        </td>
+                    </tr>
+                }
+            </table>
+            }
+        </td>
+    </tr>
+</table>
+}

@@ -1,0 +1,26 @@
+﻿@model GitCode.Models.Wiki
+
+@{
+    ViewBag.SideBar = "True";
+    ViewBag.Title = "Create";
+}
+
+@using (Html.BeginForm("Create","Wiki")) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <div class="editor-label">
+            Wiki Content
+        </div>
+            @Html.TextAreaFor(model => model.Content, new { @id = "coba", @style = "width:700px;height:500px;" })
+        
+            <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back", "Tree", new { path = GitCode.Models.PagePropertiesModel.projectName })
+</div>

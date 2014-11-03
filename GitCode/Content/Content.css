@@ -1,0 +1,33 @@
+﻿#buttonLink {
+            text-decoration:none;
+            background-color:blue;
+        }
+        #buttonLink a {
+            text-decoration:none;
+        }
+
+a.ButtonLink
+{
+    background-color:#f9f9f9;
+    text-decoration:none;
+    display:block;
+    padding:10px;
+    text-align:center;
+}
+
+a.PanelButton
+{
+    text-decoration:none;
+    display:block;
+    padding:10px;
+    text-align:center;
+}
+
+
+
+#picture {width:100px; height: 100px; background-color:#ffffff;}
+#picture a.small, #picture a.small:visited { display:block; width:100px; height:100px; text-decoration:none; background:#ffffff; top:0; left:0; border:0;}
+#picture a img {border:0;}
+#picture a.small:hover {text-decoration:none; background-color:#000000; color:#000000;}
+#picture a .large {display:block; position:absolute; width:0; height:0; border:0; top:0; left:0;}
+#picture a.small:hover .large {display:block; position:absolute; top: 50%; left:50%; width:400px; height:400px; margin-left: -200px;margin-top: -200px; }

@@ -1,0 +1,54 @@
+﻿@model IEnumerable<GitCode.Models.DetailTeam>
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<legend>@Html.ViewBag.TeamName</legend>
+@Html.Partial("Create", new ViewDataDictionary { { "teamName", ViewBag.TeamName }, { "UserId", ViewBag.UserId }, { "idClass", ViewBag.ClassId } })
+<br />
+<table class="table table-striped">
+    <tr>
+        <th>
+            Username
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Role
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        using (Html.BeginForm("EditRole","DetailTeam")) {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+        <tr>
+            <td>
+                <input type="hidden" name="idDetail" value="@item.DetailTeamId" />
+                @Html.DisplayFor(modelItem => item.User.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.Email)
+            </td>
+            <td>
+                @if(@item.Role == "Lecturer"){
+                <textarea name="role" style="border: none; width: 100px;" readonly>@item.Role</textarea>
+                }
+                else{ 
+                <textarea name="role" style="border:none;width:100px;">@item.Role</textarea>
+                }
+            </td>
+            @if(@item.Role != "Lecturer"){
+                <td><input type="submit" style="border:none" id="edit" value="Edit" /> | @Html.ActionLink("Delete", "Delete", new { id = item.DetailTeamId }, new { @style = "padding:6px;background-color:#d3dce0" })</td>
+                }
+                else
+                {
+                <td></td>
+            }
+        </tr>
+        }
+    }
+</table>

@@ -1,0 +1,46 @@
+﻿@model List<GitCode.Models.ContributorModel>
+
+@{
+    ViewBag.SideBar = "True";
+    ViewBag.Title = "Contributor";
+}
+
+@if (Model != null)
+{
+    <div style="width:100%;text-align:center">
+        <h2>Contributor</h2>
+    </div>
+<table class="table table-bordered table-hover" style="width:100%;">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Commit
+        </th>
+        <th>
+            Feature
+        </th>
+    </tr>
+@foreach (var contributor in Model)
+{
+    <tr>
+        <td>
+            @contributor.contributorName
+        </td>
+        <td style="text-align:right">
+            @contributor.contributorEmail
+        </td>
+        <td>
+            @contributor.commitContrib
+        </td>
+        <td>
+            @contributor.featureContrib
+        </td>
+    </tr>
+}
+</table>
+}

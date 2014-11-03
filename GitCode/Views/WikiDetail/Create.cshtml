@@ -1,0 +1,54 @@
+﻿@model GitCode.Models.WikiDetail
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>WikiDetail</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.WikiId, "Wiki")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("WikiId", String.Empty)
+            @Html.ValidationMessageFor(model => model.WikiId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ImagePath)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ImagePath)
+            @Html.ValidationMessageFor(model => model.ImagePath)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<form action="upload" method="post" enctype="multipart/form-data">
+
+    <label for="file">Filename:</label>
+    <input type="file" name="file" id="file" />
+
+    <input type="submit" />
+</form>
+
+<img src="@Url.Content("~/uploads/img.jpg")" alt="IMAGES" />
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,40 @@
+﻿@model GitCode.Models.CommitModel
+
+@{
+    ViewBag.SideBar = "True";
+    ViewBag.Title = "Commit Detail";
+}
+
+<table class="table table-striped" style="table-layout:fixed;width:100%">
+    <tr>
+        <th style="width: 120px;">
+            Line Added
+        </th>
+        <th style="width: 120px;">
+            Line Deleted
+        </th>
+        <th style="width: 130px;">
+            File Condition
+        </th>
+        <th>
+            File Name
+        </th>
+    </tr>
+@foreach (var commitDiff in Model.CommitChange)
+    {
+    <tr>
+        <td style="width: 120px;">
+            @commitDiff.LinesAdded
+        </td>
+        <td style="width: 120px;">
+            @commitDiff.LinesDeleted
+        </td>
+        <td style="width: 130px; ">
+            @commitDiff.ChangeKind
+        </td>
+        <td style="word-wrap:break-word;">
+            @commitDiff.Path
+        </td>
+    </tr>
+    }
+</table>

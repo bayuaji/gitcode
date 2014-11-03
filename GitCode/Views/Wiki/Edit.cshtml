@@ -1,0 +1,58 @@
+﻿@model GitCode.Models.Wiki
+
+@{
+    ViewBag.SideBar = "True";
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+<ul class="nav nav-tabs">
+    <li><a href="#branch-pane" data-toggle="tab">Wiki</a></li>
+    <li><a href="#tag-pane" data-toggle="tab">Screenshoot</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active branch-selector" id="branch-pane">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+
+            <fieldset>
+                <legend>Wiki</legend>
+
+                @Html.HiddenFor(model => model.WikiId)
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.Content)
+                </div>
+                <div class="editor-field">
+                    @Html.TextAreaFor(model => model.Content, new { @id = "coba", @style = "width:700px;height:500px;" })
+                </div>
+
+
+                <p>
+                    <input type="submit" value="Save" />
+                </p>
+            </fieldset>
+        }
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+    </div>
+    <div class="tab-pane branch-name branch-selector" id="tag-pane">
+        <div>
+            @Html.Partial("AllRepoWikiDetail", new ViewDataDictionary { { "edit", ViewBag.edit},{ "WikiDetail", ViewData["WikiDetail"] as List<GitCode.Models.WikiDetail> } })
+        </div>
+        @using (Html.BeginForm("Upload", "WikiDetail", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <label for="file">Filename:</label>
+            <input type="file" name="file" id="file" />
+
+            <input type="submit" />
+        }
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

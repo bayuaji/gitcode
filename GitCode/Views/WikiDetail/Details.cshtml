@@ -1,0 +1,29 @@
+﻿@model GitCode.Models.WikiDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>WikiDetail</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Wiki.Title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Wiki.Title)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ImagePath)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ImagePath)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.WikiDetailId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

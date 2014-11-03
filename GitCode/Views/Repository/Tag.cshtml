@@ -1,0 +1,35 @@
+﻿@model List<GitCode.Models.TagModel>
+
+@{
+    ViewBag.SideBar = "True";
+    ViewBag.Title = "Tag";
+}
+@if (Model != null) { 
+    <div style="width:100%;text-align:center">
+        <h2>Release</h2>
+    </div>
+<table class="table table-bordered table-striped">
+    @foreach(var tag in Model)
+    {
+        <tr>
+            <td>
+                <table style="width:100%;overflow:hidden">
+                    <tr>
+                        <td>
+                            <b>@Html.ActionLink(tag.name, "Tree", new { path = ViewData["GitPath"] + "/" + tag.name })</b>
+                        </td>
+                        <td style="text-align:right">
+                            @tag.when.DateTime
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            @tag.message
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    }
+</table>
+}

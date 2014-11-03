@@ -1,0 +1,86 @@
+﻿@model GitCode.Models.Issue
+
+@{
+    ViewBag.SideBar = "True";
+    ViewBag.Title = "Details";
+}
+
+<div style="width:100%;text-align:center">
+   <h3>@Model.Title</h3>
+</div>
+
+<table class="table table-striped" style="margin: 10px; width: 90%; border: dotted aliceblue">
+    <tr>
+        <td colspan="2">
+            @Model.Content
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="display-label">
+                @Model.User.Username
+            </div>
+        </td>
+        <td style="text-align:right;">
+            <div class="display-label">
+                @Model.When
+            </div>
+        </td>
+    </tr>
+    @if(Model.User.Username == WebSecurity.CurrentUserName)
+    {
+        <tr >
+            <td colspan="2">
+                @Html.ActionLink("Edit", "Edit", new { id = Model.IssueId })
+            </td>
+        </tr>
+    }
+</table>
+
+@if (Model.Comments != null) { 
+    <table style="width: 100%; border: dotted aliceblue;">
+        <tr style="text-align:center">
+            <td>
+                <h5>Comment</h5>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @foreach (var comment in Model.Comments)
+                {
+                <table class="table table-striped" style="margin: 10px; width: 90%; border: dotted aliceblue; ">
+                    <tr>
+                        <td style="border:solid dashed" colspan="2">
+                            @comment.Content
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:solid dashed">
+                            <b>@comment.User.Username</b>
+                        </td>
+                        <td style="text-align: right; border-right: solid dashed">
+                            @comment.When
+                        </td>
+                    </tr>
+                    @if (comment.User.Username == WebSecurity.CurrentUserName)
+                    {
+                        <tr>
+                            <td colspan="2">
+                                @Html.ActionLink("Edit", "Edit", "Comment", new { id = comment.CommentId }, null) | @Html.ActionLink("Delete", "Delete", "Comment", new { id = comment.CommentId }, null)
+                            </td>
+                        </tr>
+                    }
+                </table>
+                }
+            </td>
+        </tr>
+    </table>
+    
+}
+
+<div>
+    @Html.Partial("_Comment", new ViewDataDictionary { { "IssueId",@Model.IssueId } });
+</div>
+<p>
+    @Html.ActionLink("Back", "Index")
+</p>

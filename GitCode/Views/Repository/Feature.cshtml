@@ -1,0 +1,43 @@
+﻿@model IEnumerable<GitCode.Models.CommitModel>
+
+@{
+    ViewBag.SideBar = "True";
+    ViewBag.Title = "Feature";
+}
+
+
+
+@if(Model != null)
+{ 
+<h2>Feature : @ViewBag.FeatureName</h2>
+<table style="margin-top:0px;" cellpadding="0" cellspacing="0" class="table table-striped">
+    <tr>
+        <th style="text-align:center;">
+            Commit Details
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <table style="margin:0px;" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td colspan="2">
+                            @Html.ActionLink(item.ShortMessage, "CommitDetail", new { path = item.GitPath + "/" + ViewData["CurrentBranch"] + "/" + item.SHA }, null)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:20%;">
+                            <b>@item.Author.Name   </b>@item.Author.When.DateTime
+                        </td>
+                        <td style="width:20%;text-align:right">
+                            @Html.ActionLink(item.CommitCode, "Tree", new { path = item.GitPath + "/" + ViewData["CurrentBranch"] + "/" + item.SHA })
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    }
+</table>
+}
+

@@ -1,0 +1,48 @@
+﻿@model GitCode.Models.WikiDetail
+
+@{
+    ViewBag.Title = "AllRepoWikiDetail";
+}
+
+@Styles.Render("~/Content/contentcss")
+
+<h4>Screenshoot</h4>
+@if (ViewData.ContainsKey("WikiDetail") && !ViewData.ContainsKey("edit"))
+{
+    <table style="table-layout: fixed;width:100%;">
+        <tr>
+            <td align="center" style="text-align:center">
+@foreach (var wikidetail in ViewData["WikiDetail"] as List<GitCode.Models.WikiDetail>)
+{
+                <div id="picture" style="margin:30px">
+                    <a class="small" href="#nogo" title="small image">
+                        <img src="@Url.Content(wikidetail.ImagePath)" style="width:100px;height:100px" alt="IMAGES" />
+                        <img class="large" src="@Url.Content(wikidetail.ImagePath)" alt="IMAGES" />
+                    </a>
+                </div>
+}
+            </td>
+        </tr>
+    </table>
+}
+else { 
+<table style="table-layout: fixed;width:100%;">
+        @foreach (var wikidetail in ViewData["WikiDetail"] as List<GitCode.Models.WikiDetail>)
+{
+    <tr>
+            <td align="center" style="text-align:center">
+
+                <div id="picture" style="margin:30px">
+                    <a class="small" href="#nogo" title="small image">
+                        <img src="@Url.Content(wikidetail.ImagePath)" style="width:100px;height:100px" alt="IMAGES" />
+                        <img class="large" src="@Url.Content(wikidetail.ImagePath)" alt="IMAGES" />
+                    </a>
+                </div>
+            </td>
+        <td>
+            @Html.ActionLink("Delete", "Delete", "WikiDetail", new { id = wikidetail.WikiDetailId }, null)
+        </td>
+        </tr>
+}
+    </table>
+}

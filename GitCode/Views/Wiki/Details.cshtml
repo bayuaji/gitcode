@@ -1,0 +1,48 @@
+﻿@model GitCode.Models.Wiki
+
+@{
+    ViewBag.SideBar = "True";
+    ViewBag.Title = "Details";
+}
+
+@Styles.Render("~/Content/contentcss")
+
+@if (Model != null) { 
+<div style="float:right">
+    @Html.ActionLink("Edit", "Edit", new { id = Model.WikiId }, new { @class = "ButtonLink" })
+</div>
+<table class="table">
+    <tr>
+        <td style="text-align:center">
+            <h2>@Html.DisplayFor(model => model.Title)</h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.Raw(Model.Content)
+        </td>
+    </tr>
+</table>
+<div>
+    @Html.Partial("AllRepoWikiDetail", new ViewDataDictionary { {"WikiDetail",ViewData["WikiDetail"] as List<GitCode.Models.WikiDetail>}})
+</div>
+}
+else
+{
+    @Html.Partial("Create")
+}
+
+@section Scripts {
+<script>
+    function setHeight() {
+        parent.document.getElementById('the-iframe-id').style.height = document['body'].offsetHeight + 'px';
+    }
+    $('textarea').autosize();
+    $('iframe').setHeight();
+</script>
+    <style>
+    .iframe {
+        height:300px;
+    }
+    </style>
+}

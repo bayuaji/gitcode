@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e153105dc445491286be8a55e5ed4dc3" Name="Diagram1" ZoomLevel="63" >
+        <EntityTypeShape EntityType="GitCodeEDM.User" Width="1.5" PointX="5.125" PointY="8.5" />
+        <EntityTypeShape EntityType="GitCodeEDM.Team" Width="1.5" PointX="10.25" PointY="5.75" />
+        <EntityTypeShape EntityType="GitCodeEDM.DetailTeam" Width="1.5" PointX="7.5" PointY="6.375" />
+        <AssociationConnector Association="GitCodeEDM.UserDetailTeam" />
+        <AssociationConnector Association="GitCodeEDM.TeamDetailTeam" />
+        <EntityTypeShape EntityType="GitCodeEDM.Class" Width="1.5" PointX="13.25" PointY="8.75" />
+        <EntityTypeShape EntityType="GitCodeEDM.DetailClass" Width="1.5" PointX="13.25" PointY="5.875" />
+        <AssociationConnector Association="GitCodeEDM.TeamDetailClass" />
+        <AssociationConnector Association="GitCodeEDM.ClassDetailClass" />
+        <EntityTypeShape EntityType="GitCodeEDM.DetailClassAccess" Width="1.5" PointX="10.375" PointY="8.75" />
+        <AssociationConnector Association="GitCodeEDM.UserDetailClassAccess" />
+        <AssociationConnector Association="GitCodeEDM.ClassDetailClassAccess" />
+        <EntityTypeShape EntityType="GitCodeEDM.DetailRepository" Width="1.5" PointX="5" PointY="4.25" />
+        <EntityTypeShape EntityType="GitCodeEDM.Repository" Width="1.5" PointX="7.375" PointY="2.625" />
+        <AssociationConnector Association="GitCodeEDM.UserDetailRepository" />
+        <AssociationConnector Association="GitCodeEDM.RepositoryDetailRepository" ></AssociationConnector>
+        <EntityTypeShape EntityType="GitCodeEDM.Feature" Width="1.5" PointX="12.625" PointY="3.625" />
+        <AssociationConnector Association="GitCodeEDM.RepositoryFeature" />
+        <EntityTypeShape EntityType="GitCodeEDM.Issue" Width="1.5" PointX="4.25" PointY="1.125" />
+        <EntityTypeShape EntityType="GitCodeEDM.Wiki" Width="1.5" PointX="9.5" PointY="1.5" />
+        <EntityTypeShape EntityType="GitCodeEDM.Comment" Width="1.5" PointX="2.375" PointY="4.375" />
+        <EntityTypeShape EntityType="GitCodeEDM.WikiDetail" Width="1.5" PointX="12" PointY="1.75" />
+        <AssociationConnector Association="GitCodeEDM.IssueComment" />
+        <AssociationConnector Association="GitCodeEDM.RepositoryIssue" />
+        <AssociationConnector Association="GitCodeEDM.UserIssue" />
+        <AssociationConnector Association="GitCodeEDM.UserComment" ManuallyRouted="true" >
+          <ConnectorPoint PointX="6.59375" PointY="8.5" />
+          <ConnectorPoint PointX="6.59375" PointY="6.6124886067708326" />
+          <ConnectorPoint PointX="5.895833333333333" PointY="6.6124886067708317" />
+          <ConnectorPoint PointX="5.729166666666667" PointY="6.6124886067708326" />
+          <ConnectorPoint PointX="4.7083358333333329" PointY="6.6124886067708317" />
+          <ConnectorPoint PointX="4.5416691666666669" PointY="6.6124886067708326" />
+          <ConnectorPoint PointX="3.875" PointY="6.6124886067708326" />
+        </AssociationConnector>
+        <AssociationConnector Association="GitCodeEDM.RepositoryWiki" />
+        <AssociationConnector Association="GitCodeEDM.WikiWikiDetail" />
+        <AssociationConnector Association="GitCodeEDM.TeamRepository" />
+        <EntityTypeShape EntityType="GitCodeEDM.GitCodeBase" Width="1.5" PointX="0.5" PointY="2.5" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

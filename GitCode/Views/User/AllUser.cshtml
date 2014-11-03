@@ -1,0 +1,29 @@
+﻿@model IEnumerable<GitCode.Models.User>
+
+@{
+    ViewBag.Title = "AllUser";
+}
+
+<h2>AllUser</h2>
+
+<table class="table table-striped" style="width:100%;">
+    <tr>
+        <th>
+            Username
+        </th>
+        <th>
+
+        </th>
+    </tr>
+    @foreach (var user in Model)
+    {
+    <tr>
+        <td>
+            @user.Username
+        </td>
+        <td>
+            @Html.ActionLink("Delete", "Delete", new { id = user.UserId })
+        </td>
+    </tr>
+    }
+</table>

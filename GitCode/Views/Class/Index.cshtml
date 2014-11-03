@@ -1,0 +1,39 @@
+﻿@model IEnumerable<GitCode.Models.Class>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div style="float:right">
+    @Html.ActionLink("New Class", "Create",null, new { @class = "ButtonLink" })
+</div>
+<table class="table table-striped table-hover" style="margin-top:0px;">
+    <tr>
+        <th>
+            Class Name
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink(@item.Name, "Details", new { id = item.ClassId })
+        </td>
+            @if (item.DetailClassAccesses.Where(dc => dc.UserId == WebSecurity.CurrentUserId && dc.UserAccess == "admin").Any())
+{
+
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.ClassId }) |
+    @Html.ActionLink("Delete", "Delete", new { id = item.ClassId })
+
+</td>
+}
+else
+            {
+                <td></td>
+            }
+    </tr>
+}
+
+</table>

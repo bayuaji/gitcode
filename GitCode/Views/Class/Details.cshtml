@@ -1,0 +1,109 @@
+﻿@model GitCode.Models.DetailAccessDetailClassModel
+
+@{
+    ViewBag.Title = "Details";
+    }
+
+@if(ViewBag.isLecturer == "false")
+{
+<div style="float:right">
+    <table style="margin-top:0px;">
+        <tr>
+            <td>
+                @Html.ActionLink("Create Team", "Create", "Team", new { classID = ViewBag.classId }, new { @class = "ButtonLink" })
+            </td>
+        </tr>
+    </table>
+</div>
+}
+@using (Html.BeginForm("AddUser", "Class"))
+{
+    <input type="hidden" name="ClassId" value="@ViewBag.classId">
+    <input id="username" name="username" autocomplete="off" type="text" placeholder="Username">
+    <input type="submit" value="Add" />
+}
+<table class="table ">
+    <tr>
+        <td style="text-align:center">
+            <h2>@Html.ViewBag.className</h2>
+        </td>
+    </tr>
+</table>
+<div style="float:right">
+    <table class="table table-bordered table-striped" style="margin-top:0px">
+        <tr>
+            <th>
+                Team Name
+            </th>
+            <th></th>
+        </tr>
+        @foreach (var item in ViewBag.AllAccessedTeam as List<GitCode.Models.Team>)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.ActionLink("Detail", "TeamPerformance", "Team", new { teamID = item.TeamId }, null)
+                </td>
+            </tr>
+        }
+    </table>
+    </div>
+<div style="float:left">
+    <table class="table table-striped table-bordered" style="margin-top:0px;width:30%;">
+        <tr>
+            <th>
+                List User
+            </th>
+            <td>
+
+            </td>
+        </tr>
+        @foreach (var item in ViewBag.AllAccessedUser as List<GitCode.Models.User>)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Username)
+                </td>
+                @if(ViewBag.isLecturer == "true")
+        {
+                <td>
+                    @Html.ActionLink("Delete", "Delete", "DetailClassAccess", new { idclass = item.UserId + "/" + ViewBag.classId }, null)
+                </td>
+                }
+                else
+                {
+                    <td></td>
+                }
+            </tr>
+        }
+    </table>
+</div>
+
+<script>
+
+    $('#username').typeahead({
+    source: function (request, response) {
+        var customer = new Array();
+        $.ajax({
+            async: false,
+            cache: false,
+            type: "POST",
+            url: "@(Url.Action("AutoCompleteAllUser", "Repository"))",
+            data: { 'term' : request.term },
+            success: function (data) {
+                for (var i = 0; i < data.length ; i++) {
+                    customer[i] = data[i];
+                }
+            }
+        });
+        response(customer);
+    }
+});
+    function toTree() {
+        var x = document.getElementById("search").value;
+        window.location.assign("Repository/Tree/" + x + "/master")
+        //window.open("Repository/Tree/" + x + "/master","_self");
+    }
+</script>
